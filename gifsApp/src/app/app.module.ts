@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
-
-import { HeroesModule } from './heroes/heroes.module';
-import { ContadorModule } from './contador/contador.module';
-import { DbzModule } from './dbz/dbz.module';
+import { SharedModule } from './shared/shared.module';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { GifsModule } from './gifs/gifs.module';
 
 
 @NgModule({
@@ -15,9 +13,8 @@ import { DbzModule } from './dbz/dbz.module';
   ],
   imports: [
     BrowserModule,
-    HeroesModule,
-    ContadorModule,
-    DbzModule
+    SharedModule,
+    GifsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
